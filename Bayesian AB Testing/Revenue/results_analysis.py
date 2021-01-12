@@ -37,16 +37,16 @@ if __name__ == "__main__":
 
     fig, ax = plt.subplots()
 
-    # x = np.linspace(0,3,1000)
-    x = np.linspace(0,1,1000)
+    x = np.linspace(0,3,1000)
+    # x = np.linspace(0,1,1000)
     # z = [1/i for i in x]
 
-    # ax.plot(x, control.pdf(x), label='control')
-    # ax.plot(x, treatment.pdf(x), label='treatment')
-    # ax.set_xlabel('Revenue Rate)
-    # ax.set_ylabel('Density')
-    # ax.set_title('Experiment Posteriors')
-    # ax.legend()
+    ax.plot(x, control.pdf(x), label='control')
+    ax.plot(x, treatment.pdf(x), label='treatment')
+    ax.set_xlabel('Rate Parameter')
+    ax.set_ylabel('Density')
+    ax.set_title('Experiment Posteriors')
+    ax.legend()
     
     # ax.plot(x, control.pdf(z), label='control')
     # ax.plot(x, treatment.pdf(z), label='treatment')
@@ -86,4 +86,4 @@ if __name__ == "__main__":
     # ax.set_ylabel('Density')
     # ax.set_title('Experiment Posteriors')
     # ax.legend()
-    # plt.show()
+    plt.show()
